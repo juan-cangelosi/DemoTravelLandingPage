@@ -1,0 +1,111 @@
+/* Colors */
+.textcolor-white, .textcolor-white-active, .textcolor-white-hover:hover{
+	color: #fff;
+}
+.textcolor-lightgray, .textcolor-lightgray-active, .textcolor-lightgray-hover:hover{
+	color: #e7e7e7;
+}
+.textcolor-gray, .textcolor-gray-active, .textcolor-gray-hover:hover{
+	color: #555;
+}
+.textcolor-darkgray, .textcolor-darkgray-active, .textcolor-darkgray-hover:hover{
+	color: #222;
+}
+.textcolor-black, .textcolor-black-active, .textcolor-black-hover:hover{
+	color: #000;
+}
+.textcolor-red, .textcolor-red-hover:hover, .textcolor-red-active{
+	color: #da1e1e;
+}
+.textcolor-pink, .textcolor-pink-hover:hover, .textcolor-pink-active{
+	color: #e511f2;
+}
+.textcolor-green, .textcolor-green-hover:hover, .textcolor-green-active{
+	color: #64b523;
+}
+.textcolor-blue, .textcolor-blue-hover:hover, .textcolor-blue-active{
+	color: #034da2;
+}
+.textcolor-yellow, .textcolor-yellow-hover:hover, .textcolor-yellow-active{
+	color: #ffc602;
+}
+.textcolor-purple, .textcolor-purple-hover:hover, .textcolor-purple-active{
+	color: #b221f6;
+}
+.textcolor-skyblue, .textcolor-skyblue-hover:hover, .textcolor-skyblue-active{
+	color: #01b4ff;
+}
+.textcolor-orange, .textcolor-orange-hover:hover, .textcolor-orange-active{
+	color: #f85b05;
+}
+
+
+.bgcolor-red, .bgcolor-red-active, .bgcolor-red-hover:hover{
+	background: #da1e1e;
+}
+.bgcolor-pink, .bgcolor-pink-active, .bgcolor-pink-hover:hover{
+	background: #e511f2;
+}
+.bgcolor-green, .bgcolor-green-active, .bgcolor-green-hover:hover{
+	background: #64b523;
+}
+.bgcolor-blue, .bgcolor-blue-active, .bgcolor-blue-hover:hover{
+	background: #034da2;
+}
+.bgcolor-yellow, .bgcolor-yellow-active, .bgcolor-yellow-hover:hover{
+	background: #ffc602;
+}
+.bgcolor-purple, .bgcolor-purple-active, .bgcolor-purple-hover:hover{
+	background: #b221f6;
+}
+.bgcolor-skyblue, .bgcolor-skyblue-active, .bgcolor-skyblue-hover:hover{
+	background: #01b4ff;
+}
+.bgcolor-orange, .bgcolor-orange-active, .bgcolor-orange-hover:hover{
+	background: #f85b05;
+}
+.bgcolor-white, .bgcolor-white-active, .bgcolor-white-hover:hover{
+	background: #fff;
+}
+.bgcolor-lightgray, .bgcolor-lightgray-active, .bgcolor-lightgray-hover:hover{
+	background: #e7e7e7;
+}
+.bgcolor-gray, .bgcolor-gray-active, .bgcolor-gray-hover:hover{
+	background: #e7e7e7;
+}
+.bgcolor-darkgray, .bgcolor-darkgray-active, .bgcolor-darkgray-hover:hover{
+	background: #222;
+}
+.bgcolor-black, .bgcolor-black-active, .bgcolor-black-hover:hover{
+	background: #000;
+}
+
+
+
+
+
+
+/* Alignments */
+.align_left, .alignleft{
+	float:left;
+	}
+.align_right, .alignright{
+	float:right;
+	}
+.align_center, .aligncenter{
+	display:table;
+	margin:0 auto 0 auto;
+	}
+.aligncenter{
+	display:table;
+	margin:0 auto 0 auto;
+	}	
+
+
+/* Center Content */
+.fit-in-center{
+	display: table;
+	width: auto;
+	margin: 0 auto 0 auto;
+	position: relative;
+}	

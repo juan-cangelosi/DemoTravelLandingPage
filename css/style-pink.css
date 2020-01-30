@@ -1,0 +1,102 @@
+.topbutton{
+	background: #21ABCD;
+	color: #fff;
+}
+.topbutton:hover{
+	background: #FA6E79;
+	color: #fff;
+}
+header{
+	background: #3B444B;
+}
+.logo{
+	color: #fff;
+}
+header .phone{
+	background: #FA6E79;
+	color: #fff;
+}
+nav ul li a{
+	color: #fff;
+}
+nav ul li:hover a, nav ul li.active a{
+	background: #21ABCD;
+	color: #fff;
+}
+nav ul li ul li a, nav ul li:hover ul li a{
+	background: #3B444B;
+	color: #fff;
+}
+nav ul li ul li a:hover, nav ul li:hover ul li a:hover{
+	background: #21ABCD;
+	color: #fff;
+}
+.mobtitle{
+	color: #fff; 
+	}
+.banner{
+	background: url(../images/bg-7.jpg) no-repeat center center;
+	background-size: cover;
+}
+.banner .overlay{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.banner h1{
+	color:#fff;
+}
+.banner h1 strong{
+	color: #FA6E79;
+}
+.banner h2{
+	color:#fff;
+}
+.banner h3{
+	color:#fff;
+}
+.banner .calloption{
+	background: #21ABCD;
+	color: #fff;
+}
+.banner .calloption .borderside{
+	border:3px solid #FA6E79;
+}
+.page .contentsection .items-wrap .item .icon{
+	background: #21ABCD;
+	color: #fff;
+}
+.page .contentsection .items-wrap .item:nth-child(2) .icon{
+	background: #FA6E79;
+	color: #fff;
+}
+.button{
+	background: #21ABCD;
+	color: #fff;
+}
+.button:hover{
+	background: #FA6E79;
+}
+footer{
+	background: #3B444B;
+}
+footer .widget .footerlogo{
+	color: rgba(255,255,255,0.5);
+}
+footer .widget .footerlogo img{
+	opacity: 0.5;
+}
+footer .widget ul li a, footer .widget p{
+	color: rgba(255,255,255,0.5);
+}
+footer .widget ul li a:hover{
+	color: #FA6E79;
+}
+footer .footerbottom{
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+footer .footerbottom .copyright, footer .footerbottom .socialmedia p{
+	color: rgba(255,255,255,0.5);
+}
