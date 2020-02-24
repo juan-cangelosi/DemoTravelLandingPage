@@ -54,7 +54,12 @@
   src="https://www.facebook.com/tr?id=2365964370392383&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-		<script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>						   
+		<script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>	
+	<script>
+		var fbpValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+		var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+		(window._rgba_tags = (window._rgba_tags || [])).push({fbp:fbpValue},{fbc: fbcValue});
+	</script>
 </head>
 
 <body>
