@@ -57,15 +57,18 @@
 <script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>	
 <script>
 	function pushFacebookCookie() {
-		var fbpValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-		var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-		console.log("Checking", fbpValue, fbcValue, fbpValue != null, fbcValue != null);
-		if (fbpValue != null && fbcValue != null) {
-			(window._rgba_tags = (window._rgba_tags || [])).push({fbp:fbpValue},{fbc: fbcValue});
-		}
+		var cookieCheckInterval = setInterval(function() {
+			var fbpValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+			var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+			console.log("Checking", fbpValue != "", fbcValue != "", fbpValue != null, fbcValue != null);
+			if (fbpValue != null && fbcValue != null && fbpValue != "" && fbcValue != "") {
+				(window._rgba_tags = (window._rgba_tags || [])).push({fbp:fbpValue},{fbc: fbcValue});
+				clearInterval(cookieCheckInterval);
+			}
+		}, 3000);
 	}
-	
-	var cookieCheckInterval = setInterval(pushFacebookCookie, 3000);
+	pushFacebookCookie();
+
 </script>
 </head>
 
