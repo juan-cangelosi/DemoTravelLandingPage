@@ -59,7 +59,7 @@
 	function pushFacebookCookie() {
 		var fbpValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 		var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-		console.log("Checking", fbpValue, fbcValue);
+		console.log("Checking", fbpValue, fbcValue, fbpValue != null, fbcValue != null);
 		if (fbpValue != null && fbcValue != null) {
 			(window._rgba_tags = (window._rgba_tags || [])).push({fbp:fbpValue},{fbc: fbcValue});
 		}
