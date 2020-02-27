@@ -56,9 +56,9 @@
 <!-- End Facebook Pixel Code -->
 <script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>	
 <script>
-	function getCookie(name) {
+	function getFBCookie(name) {
 	    function escape(s) { return s.replace(/([.*+?\^${}()|\[\]\/\\])/g, '\\$1'); };
-	    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+	    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape('_' + name) + '=([^;]*)'));
 	    return match ? match[1] : null;
 	}
 	function checkAndPushCookie(tagName) {
