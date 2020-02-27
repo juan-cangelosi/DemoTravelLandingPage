@@ -58,7 +58,7 @@
 <script>
 	function checkAndPushCookie(tagName) {
 
-   		 var regex = new RegExp('(?:^|;)\\s?' + tagName + '=(.*?)(?:;|$)','i'),
+   		 var regex = new RegExp('(?:^|;)\\s?_' + tagName + '=(.*?)(?:;|$)','i'),
        		 match = document.cookie.match(regex);
 		console.log(regex, match);
 		var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
