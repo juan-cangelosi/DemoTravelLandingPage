@@ -70,7 +70,7 @@
 			var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 			checkAndPushCookie(fbpValue, "FBP");
 			checkAndPushCookie(fbcValue, "FBC");
-			if ((fbpValue != null && fbcValue != null && fbpValue != "" && fbcValue != "") || retryAttempts >= 3) {
+			if ((fbpValue != null && fbcValue != null && fbpValue != "" && fbcValue != "") || retryAttempts > 3) {
 				clearInterval(cookieCheckInterval);
 			}
 			retryAttempts++;
