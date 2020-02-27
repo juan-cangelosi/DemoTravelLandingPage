@@ -56,20 +56,24 @@
 <!-- End Facebook Pixel Code -->
 <script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>	
 <script>
-	function checkAndPushCookie(cookieValue, tagName) {
+	function checkAndPushCookie(tagName) {
+
+   		 var regex = new RegExp('(?:^|;)\\s?' + tagName + '=(.*?)(?:;|$)','i'),
+       		 match = document.cookie.match(regex);
+		console.log(regex, match);
+		var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 		if (cookieValue != null && cookieValue != "") {
 			var tagToPush = {};
 			tagToPush[tagName] = cookieValue;
 			(window._rgba_tags = (window._rgba_tags || [])).push(tagToPush);
 		}
+		return cookieValue;
 	}
 	function pushFacebookCookie() {
 		var retryAttempts = 0;
 		var cookieCheckInterval = setInterval(function() {
-			var fbpValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-			var fbcValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbc\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-			checkAndPushCookie(fbpValue, "FBP");
-			checkAndPushCookie(fbcValue, "FBC");
+			var fbpValue = checkAndPushCookie("fbp");
+			var fbcValue = checkAndPushCookie("fbc");
 			if ((fbpValue != null && fbcValue != null && fbpValue != "" && fbcValue != "") || retryAttempts > 3) {
 				clearInterval(cookieCheckInterval);
 			}
