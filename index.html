@@ -56,12 +56,13 @@
 <!-- End Facebook Pixel Code -->
 <script src="//b-js.ringba.com/CA0f47bfbd4a734ea796c25b8d2f80abe7" async="async"></script>	
 <script>
+	function getCookie(name) {
+	    function escape(s) { return s.replace(/([.*+?\^${}()|\[\]\/\\])/g, '\\$1'); };
+	    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+	    return match ? match[1] : null;
+	}
 	function checkAndPushCookie(tagName) {
-
-   		 var regex = new RegExp('(?:^|;)\\s?_' + tagName + '=(.*?)(?:;|$)','i'),
-       		 match = document.cookie.match(regex);
-		console.log(regex, match);
-		var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)_fbp\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+		var cookieValue = getCookie(tagName);
 		if (cookieValue != null && cookieValue != "") {
 			var tagToPush = {};
 			tagToPush[tagName] = cookieValue;
