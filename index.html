@@ -62,7 +62,7 @@
 	    return match ? match[1] : null;
 	}
 	function checkAndPushCookie(tagName) {
-		var cookieValue = getCookie(tagName);
+		var cookieValue = getFBCookie(tagName);
 		console.log(cookieValue);
 		if (cookieValue != null && cookieValue != "") {
 			var tagToPush = {};
