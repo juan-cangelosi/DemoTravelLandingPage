@@ -63,6 +63,7 @@
 	}
 	function checkAndPushCookie(tagName) {
 		var cookieValue = getCookie(tagName);
+		console.log(cookieValue);
 		if (cookieValue != null && cookieValue != "") {
 			var tagToPush = {};
 			tagToPush[tagName] = cookieValue;
