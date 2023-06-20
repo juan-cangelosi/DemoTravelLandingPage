@@ -61,7 +61,8 @@ src="https://www.facebook.com/tr?id=3073530812914758&ev=PageView&noscript=1"
     const urlParams = new URLSearchParams(queryString);
 	console.log("URL Params", urlParams);
     const pubId = urlParams.get('pubId');
-    fetch('https://api.myjson.com/bins/176t5e')
+	console.log("Pub id", pubId);
+    fetch('./mappings.json')
       .then((response) => {
 	console.log("Fetch response", response);
         return response.json();
