@@ -132,30 +132,7 @@ src="https://www.facebook.com/tr?id=3073530812914758&ev=PageView&noscript=1"
 			<h3><strong>Call Us Below</strong> to Get Started!</h3>
 			<div class="calloption">
 				<div class="borderside"></div>
-				<img src="images/i2.png" alt="" /> <script> (function (e, d) {
-    //Ringba.com phone number tracking
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-	console.log("URL Params", urlParams);
-    const pubId = urlParams.get('pubId');
-	console.log("Pub id", pubId);
-    fetch('./mappings.json')
-      .then((response) => {
-	console.log("Fetch response", response);
-        return response.json();
-      })
-      .then((myJson) => {
-        var ringba_com_tag = myJson[pubId];
-        var _sc = d.getElementsByTagName('script'), _s = _sc[_sc.length - 1];
-        e._rgba = e._rgba || { q: [] }; e._rgba.q.push({ tag: ringba_com_tag, script: _s });
-        if (!(e._rgba.loading = !!e._rgba.loading)) {
-          var sc = d.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
-          sc.src = '//js.callcdn.com/js_v3/min/ringba.com.js';
-          var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
-          e._rgba.loading = true;
-        }
-      });
-  })(window, document); </script>    
+				<img src="images/i2.png" alt="" id="showNumber"/>
 			</div>
 		</section>
 	</section>
