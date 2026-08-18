@@ -42,50 +42,14 @@
   !function(v,i,b,e,c,o){if(!v[c]){var s=v[c]=function(){s.process?s.process.apply(s,arguments):s.queue.push(arguments)};s.queue=[],s.b=1*new Date;var t=i.createElement(b);t.async=!0,t.src=e;var n=i.getElementsByTagName(b)[0];n.parentNode.insertBefore(t,n)}}(window,document,"script","https://s.vibe.co/vbpx.js","vbpx");
   vbpx('init','ngCn2J');
   vbpx('event', 'page_view');
+
+	window._rgba_tags = (window._rgba_tags || []);
+window._rgba_tags.push({ nexxen_uid: window._turn_uid });
 </script>
 	
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3073530812914758');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3073530812914758&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Facebook Pixel Code -->
 <!-- <script src=//b-js.ringba.com/CAa5c48082ba1949d2845d4bf9e80d3b5a async></script> 	-->
-<script> (function (e, d) {
-    //Ringba.com phone number tracking
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-	console.log("URL Params", urlParams);
-    const pubId = urlParams.get('pubId');
-	console.log("Pub id", pubId);
-    fetch('./mappings.json')
-      .then((response) => {
-	console.log("Fetch response", response);
-        return response.json();
-      })
-      .then((myJson) => {
-        var ringba_com_tag = myJson[pubId];
-        var _sc = d.getElementsByTagName('script'), _s = _sc[_sc.length - 1];
-        e._rgba = e._rgba || { q: [] }; e._rgba.q.push({ tag: ringba_com_tag, script: _s });
-        if (!(e._rgba.loading = !!e._rgba.loading)) {
-          var sc = d.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
-          sc.src = '//js.callcdn.com/js_v3/min/ringba.com.js';
-          var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
-          e._rgba.loading = true;
-        }
-      });
-  })(window, document); </script>
+<script src=//b-js.ringba.com/CA7c8e9ed11654428ab1258dca8526f8e0 async></script>
 </head>
 
 <body>
@@ -97,7 +61,7 @@ src="https://www.facebook.com/tr?id=3073530812914758&ev=PageView&noscript=1"
 
 		<div class="phone">
 			<img src="images/i1.png" alt="" />
-			<a onClick="fbq('trackCustom', 'ringbaclick', {test: 'test'});">Call Now: 18883040131</a>
+			<a >Call Now: 12029825467</a>
 		</div>
 
 		<a href="" class="logo"><img src="images/logo-white.png" alt="" /> <strong>Internet</strong></a>
